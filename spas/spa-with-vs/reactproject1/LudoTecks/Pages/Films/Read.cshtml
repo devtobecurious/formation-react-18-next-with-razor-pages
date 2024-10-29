@@ -1,0 +1,10 @@
+﻿@page "/films/{id:int}"
+@model LudoTecks.Pages.Films.ReadModel
+@{
+}
+
+@section scripts {
+	<script>
+		const film = @Json.Serialize(Model.Film)
+	</script>
+}

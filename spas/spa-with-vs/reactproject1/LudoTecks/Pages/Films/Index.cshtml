@@ -1,4 +1,12 @@
-﻿@page
+﻿@page "/films"
+
 @model LudoTecks.Pages.Films.IndexModel
 @{
+}
+
+
+@section scripts {
+	<script>
+		var films = @Json.Serialize(Model.Films)
+	</script>
 }

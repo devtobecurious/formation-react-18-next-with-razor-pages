@@ -5,13 +5,15 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactproject1", "reactproject1\reactproject1.esproj", "{51D06C9A-D384-42D8-B0DA-D3DC62F0D832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudoTecks", "LudoTecks\LudoTecks.csproj", "{2AF94947-6F20-4400-AE28-45CDAC321FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LudoTecks", "LudoTecks\LudoTecks.csproj", "{2AF94947-6F20-4400-AE28-45CDAC321FB4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tutorial-code", "..\test-with-reactnet\tutorial-code.csproj", "{738BE18B-1139-492B-849B-A7A691F2DF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{DE9FAC6D-E867-4FB8-A540-7723CEB40B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{DE9FAC6D-E867-4FB8-A540-7723CEB40B7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POCs", "POCs", "{E9E9124A-6DCB-4A1A-84A5-3952237C3973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRazorWithReact", "TestRazorWithReact\TestRazorWithReact.csproj", "{56070612-F27E-4FEF-9602-F45B05E7860A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{DE9FAC6D-E867-4FB8-A540-7723CEB40B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE9FAC6D-E867-4FB8-A540-7723CEB40B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE9FAC6D-E867-4FB8-A540-7723CEB40B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56070612-F27E-4FEF-9602-F45B05E7860A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56070612-F27E-4FEF-9602-F45B05E7860A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56070612-F27E-4FEF-9602-F45B05E7860A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56070612-F27E-4FEF-9602-F45B05E7860A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{51D06C9A-D384-42D8-B0DA-D3DC62F0D832} = {E9E9124A-6DCB-4A1A-84A5-3952237C3973}
 		{738BE18B-1139-492B-849B-A7A691F2DF6B} = {E9E9124A-6DCB-4A1A-84A5-3952237C3973}
 		{DE9FAC6D-E867-4FB8-A540-7723CEB40B7E} = {E9E9124A-6DCB-4A1A-84A5-3952237C3973}
+		{56070612-F27E-4FEF-9602-F45B05E7860A} = {E9E9124A-6DCB-4A1A-84A5-3952237C3973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {523A82E5-4FE6-47E4-A537-B1E7AD2432FC}
