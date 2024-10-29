@@ -9,14 +9,14 @@ const SuspenseLayout = () => (
 
 const Home = lazy(() => import('./Pages/Home'));
 const Films = lazy(() => import('./Pages/Films/Films'));
-const ReadFilm = lazy(() => import('./Pages/Films/Read'));
+const EditFilm = lazy(() => import('./Pages/Films/Edit'));
 
 const routes = createRoutesFromElements(
     <>
         <Route element={<SuspenseLayout />}>
             <Route path="" element={<Home></Home>}></Route>
             <Route path="films" element={<Films></Films>}></Route>
-            <Route path="films/:id" element={<ReadFilm></ReadFilm>}></Route>
+            <Route path="films/:id" element={<EditFilm></EditFilm>}></Route>
         </Route>
     </>
 );
