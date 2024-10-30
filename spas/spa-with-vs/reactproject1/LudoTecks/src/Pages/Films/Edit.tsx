@@ -1,8 +1,10 @@
 ﻿import { useForm } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { Film } from "./Models";
+import updateMovie from "./Services/update-movie";
 
-declare const film: { id: number, label: string };
+declare const film: Film;
 
 const filmSchema = z.object({
     label: z.string().min(1, { message: 'Required' }),
@@ -15,13 +17,23 @@ const Read = () => {
         resolver: zodResolver(filmSchema)
     });
 
-    const onSubmit = data => {
-        console.info(errors)
+    const onSubmit =  async (data: Film) => {
+        if (isValid) {
+            try {
+                data.id = film.id
+                await updateMovie(data)
+
+                alert('Film is updated !')
+            } catch(error: unknown) {
+                console.error('Failed to save film', error)
+            }
+        }
     }
 
     return (
         <>
             <form onSubmit={handleSubmit(onSubmit)}>
+                <input type="hidden" {...register("id")} ></input>
                 <input {...register("label", { required: true })} />
                 {errors.label && <span>{errors.label?.message}</span>}
                 <button disabled={!isValid}>Ajouter</button>

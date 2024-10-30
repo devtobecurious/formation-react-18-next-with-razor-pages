@@ -10,14 +10,18 @@
     <None Remove="src\App.tsx" />
     <None Remove="src\Index.tsx" />
     <None Remove="src\Pages\Films.tsx" />
+    <None Remove="src\Pages\Films\Models\index.ts" />
     <None Remove="src\Pages\Films\Read.tsx" />
+    <None Remove="src\Pages\Films\Services\update-movie.ts" />
     <None Remove="src\Routes.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="src\App.tsx" />
     <TypeScriptCompile Include="src\Pages\Films\Films.tsx" />
+    <TypeScriptCompile Include="src\Pages\Films\Models\index.ts" />
     <TypeScriptCompile Include="src\Pages\Films\Read.tsx" />
+    <TypeScriptCompile Include="src\Pages\Films\Services\update-movie.ts" />
     <TypeScriptCompile Include="src\Pages\Home.tsx" />
     <TypeScriptCompile Include="src\Routes.ts" />
   </ItemGroup>

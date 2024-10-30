@@ -10,6 +10,15 @@ namespace LudoTecks.Pages.Films
 			this.Film = new() { Id = 1, Label = "Star wars" };
 		}
 
+		public IActionResult OnPost(Film film)
+		{
+			return new JsonResult(new
+			{
+				Status = "OK",
+				Item = film
+			});
+		}
+
 		public Film Film { get; set; }
 	}
 }

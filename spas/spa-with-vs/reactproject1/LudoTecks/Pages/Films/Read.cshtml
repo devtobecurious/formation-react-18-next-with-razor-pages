@@ -1,9 +1,21 @@
 ﻿@page "/films/{id:int}"
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
 @model LudoTecks.Pages.Films.ReadModel
 @{
 }
 
+@functions {
+	public string? GetAntiXsrfRequestToken()
+	{
+		return Xsrf.GetAndStoreTokens(Model.HttpContext).RequestToken;
+	}
+}
+
+
+
 @section scripts {
+	<input type="hidden" id="token-xsrf" value="@GetAntiXsrfRequestToken()" />
+
 	<script>
 		const film = @Json.Serialize(Model.Film)
 	</script>
